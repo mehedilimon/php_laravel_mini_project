@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<?php 
+include 'contact_form.php';
+include 'blog.php';
+
+?>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.15/tailwind.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="flex items-center justify-between p-4 bg-yellow-50">
+    <div class="flex items-center">
+      <img class="h-10" src="https://seeklogo.com/images/D/dragon-logo-7BF2E0A4DB-seeklogo.com.png" alt="Dragons">
+      <h1 class="text-3xl text-red-600 font-extrabold ml-2">Dragons</h1>
+    </div>
+    <nav>
+      <ul class="flex items-center space-x-4">
+        <li class="text-green-600"><a href="homepage.html">Home</a></li>
+        <li class="text-green-600"><a href="bolg.php">Blog</a></li>
+        <li class="text-green-600"><a href="contact_form.php">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Featured Post Section -->
+  <section class="bg-lime-200 py-8 flex">
+    <div class="container mx-auto">
+      <h2 class="text-3xl text-yellow-800 font-extralight mb-2">Latest Blog About Dragons</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <img class="w-full h-64 object-cover" src="https://wallpapercave.com/dwp1x/wp4855935.jpg" alt="Featured Dragon Found Image">
+        </div>
+        <div>
+          <h3 class="text-2xl text-red-700 font-bold mb-1">Vhagar - Dragon of House Targaryen.</h3>
+          <p class="text-red-950 font-extralight mb-2">Vhagar was a she-dragon of House Targaryen. She was ridden by Queen Visenya Targaryen during Aegon's Conquest, alongside Aegon the Conqueror's Balerion and their sister Rhaenys's Meraxes. Other known riders of Vhagar are Prince Baelon Targaryen, Lady Laena Velaryon and Prince Aemond Targaryen.</p>
+          <a href="bolg.php" class="text-blue-500 hover:underline">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
